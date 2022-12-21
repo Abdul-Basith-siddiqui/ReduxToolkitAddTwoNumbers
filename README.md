@@ -1,3 +1,19 @@
+
+# Simple Redux-ToolKit WebApp which add two numbers
+
+# components 
+
+The Add component is a form that allows a user to input two numbers, and then adds them together when the user clicks the "ADD" button.
+
+The Add component has a state object called num that has three properties: num1, num2, and ans. num1 and num2 are the two input numbers, and ans is the sum of those two numbers and  has a changeHandle function that updates the num state object whenever the user inputs a new value into the form fields.
+
+When the user clicks the "ADD" button, the Add component dispatches the showData action from the showSlice slice with the num1 and num2 values as the payload. This updates the show slice of the Redux store with the new values of num1 and num2.
+
+The AddNum component is a functional component that displays the sum of num1 and num2 from the Redux store. It uses the useSelector hook to get the show slice of the Redux store, and then displays the sum of first and second, which are the updated values of num1 and num2 from the show slice.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
